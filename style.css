@@ -1,21 +1,50 @@
 #app {
   display: flex;
   flex-direction: column;
+  background-color: rgb(200, 150, 30);
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  /* The image used */
+  background-image: url("bg_header.jpg");
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 content #Part1 {
   display: flex;
   flex-direction: row;
+  margin-left: 5%;
 }
 
 content #Part1 aside {
   /* display: flex;
   flex-direction: column; */
   width: 30%;
+  margin-top: 2%;
 }
 
 #accordionInfo {
   width: 70%;
+  background-color: rgb(204, 184, 137);
+}
+
+.accordion-body {
+  background-color: rgb(204, 184, 137);
+}
+
+.accordion-header button {
+  background-color: rgb(211, 170, 74);
+  color: rgb(58, 47, 22);
 }
 
 
