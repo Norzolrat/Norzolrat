@@ -140,7 +140,7 @@ content .nexus2{
 }
 
 
-@media only screen and (min-width : 321px) {
+@media only screen and (max-width : 850px) {
     header > #jumbotron > aside {
         float: center;
         height: 100%;
