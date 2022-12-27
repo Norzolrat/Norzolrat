@@ -1,86 +1,154 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="CV information">
-    <meta name="keywords" content="HTML, CSS, bootstrap">
-    <meta name="author" content="Normann ZOLGER">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body id="app">
-    <header id="glitch">
-        <h3 id="Name">Normann ZOLGER</h3>
-        <div id="Header-Info">
-          <p>Etudiant en <span>Cybersécurité</span></p>
-          <p>Sérieux et sociable je travaille en équipe depuis 2016.
-              J’aime découvrir de nouveaux horizons et aussi créer de manière
-              innovante.</p>  
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV-NOZ</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./glitch.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+<body>
+<main>
+    <header>
+        <div id="jumbotron">
+            <aside>
+                <img class="materialboxed" width="275" height="275" src="./images/normann.jpg">
+                <div id="glitch">
+                    <h2 id="name">Normann ZOLGER</h2>
+                </div>
+                <p>
+                    <br>J'ai pour objectif de me faire une place dans la cybersécurité.
+                    <br>Je suis trés investis dans le domaine de l'informatique depuis mes années colleges.
+                    <br>
+                    <br>Si vous vous demandez pourquoi j'ai rejoint le monde la cybersécurité, c'est tout simplement que ce vaste monde m'effraie et j'ai le desir de protéger les gens peu informés.
+                </p>
+                <button>
+                    <i class="material-icons">arrow_downward</i>
+                </button>
+            </aside>
         </div>
     </header>
+    <div id="header-empty"></div>
+    <nav>
+        <a href="#pres">
+            <i class="material-icons">account_box</i><div class="no_smart"> Présentation</div>
+        </a>
+        <a href="#etud">
+            <i class="material-icons">school</i><div class="no_smart"> Etude</div>
+        </a>
+        <a href="#expe">
+            <i class="material-icons">business_center</i><div class="no_smart"> Expérience</div>
+        </a>
+        <a href="#hobb">
+            <i class="material-icons">videogame_asset</i><div class="no_smart"> Hobbie</div>
+        </a>
+        <a href="#pfol">
+            <i class="material-icons">attach_file</i><div class="no_smart"> Porte Folio</div>
+        </a>
+    </nav>
     <content>
-      <div id="Part1">
-        <aside>
-            <img id="profil-picture" src="./images/profil_picture.png" class="img-fluid rounded" alt="Profil picture">
-            <div class="cv_info">
-              <div id="cv_info_1">
-                <h3>Contact</h3>
-                <hr>
-                <div class="content">
-                </div>
-                <hr>
-              </div>
-              <div id="cv_info_2">
-                <h3>Permis</h3>
-                <hr>
-                <div class="content">
-                </div>
-                <hr>
-              </div>
-              <div id="cv_info_3">
-                <h3>Formations</h3>
-                <hr>
-                <div class="content">
-                </div>
-                <hr>
-              </div>
-              <div id="cv_info_4">
-                <h3>Langues</h3>
-                <hr>
-                <div class="content">
-                </div>
-                <hr>
-              </div>
-              <div id="cv_info_5">
-                <h3>Hobbies / Sport</h3>
-                <hr>
-                <div class="content">
-                </div>
-                <hr>
-              </div>
-            </div>
-        </aside>
-        <div id="accordionInfo">
+        <article id="pres" class="nexus1">
+            <h3>Présentation</h3>
             <div>
-              <button id="accordion-button-1" class="accordion-button">EXPERIENCES PROFESSIONNELLES</button>
-              <div id="accordion-item1" class="accordion-item content">
-              </div>
+                <h4>
+                    <strong>Normann ZOLGER</strong>
+                </h4>
+                <p>
+                    <i class="material-icons">local_phone</i> 06 51 97 10 27
+                </p>
+                <p>
+                    <i class="material-icons">mail</i> normann.zolger@outlook.fr
+                </p>
+                <p>
+                    <i class="material-icons">place</i> 75 bis avenue de Ventadour, 19300 Egletons
+                </p>
+                <p>
+                    <i class="material-icons">directions_car</i> Permis B
+                </p>
             </div>
+        </article>
+        <article id="etud" class="nexus2">
+            <h3>Etude</h3>
             <div>
-              <button id="accordion-button-2" class="accordion-button">COMPETENCES TECHNIQUES</button>
-              <div id="accordion-item2" class="accordion-item content">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="Part2">
+                <h4>Formations</h4>
+                <p>
+                    <i class="material-icons">play_arrow</i> Guardia 3eme Année <em>(encours)</em>
+                </p>
+                <p>
+                    <i class="material-icons">play_arrow</i> IUT Informatique Aubière 2022
+                </p>
+                <p>
+                    <i class="material-icons">play_arrow</i> BACCALAUREAT Scientifique 2019, Option SI
+                </p>
 
-        </div>
-      </content>
+                <h4>Langues</h4>
+                <p>
+                    <i class="material-icons">play_arrow</i> 75 bis avenue de Ventadour, 19300 Egletons
+                </p>
+                <p>
+                    <i class="material-icons">play_arrow</i> Permis B
+                </p>
+            </div>
+        </article>
+        <article id="expe" class="nexus1">
+            <h3>Expérience</h3>
+            <div>
+                <h4>2022 – 2023 <em>(encours)</em></h4>
+                <p>
+                    Alternace chez Secuserve, 74 Bd du 11 Novembre 1918, 69100 Villeurbanne. Poste : Support Téléphonique
+                    <br>Entreprise qui propose du filtrage de messagerie.
+                </p>
+                <hr>
+                <br>
+                <h4>2022</h4>
+                <p>
+                    Stage chez SYLink Technologie sur Clermont-Ferrand (63000), 35 rue Blatin.
+                    <br>Entreprise dans le domaine la cybersécurité.
+                </p>
+                <hr>
+                <br>
+                <h4>2016 - 2021</h4>
+                <p>
+                    Chaque été depuis 2016 jusqu’à 2021 j’ai ramassé de la paille pour l’entreprise SARL Monteil & Fils en Corrèze. C'est la seule entreprise européenne qui fabrique des paillons authentiques.
+                </p>
+                <hr>
+                <br>
+                <h4>2015</h4>
+                <p>
+                    J'ai travaillé en tant que serveur dans une crêperie saisonnière installée près du château de Ventadour (19300).
+                </p>
+                <hr>
+            </div>
+        </article>
+        <article id="hobb" class="nexus2">
+            <h3>Hobbie</h3>
+            <div>
+                <p>
+                    <i class="material-icons">stars</i> Randonnée en Nature
+                </p>
+                <p>
+                    <i class="material-icons">stars</i> Cuisine
+                </p>
+                <p>
+                    <i class="material-icons">stars</i> Electronique
+                </p>
+            </div>
+        </article>
+        <article id="pfol" class="nexus1">
+            <h3>Porte Folio</h3>
+            <div>
+                
+            </div>
+        </article>
+    </content>
     <footer>
-      <script src="./js/methods.js"></script>
-      <script src="./js/data.js"></script>
-      <script src="./js/main.js"></script>
+
     </footer>
+</main>
+<script src="./js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

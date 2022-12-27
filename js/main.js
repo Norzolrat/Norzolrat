@@ -1,27 +1,24 @@
-let cv_info = CV_INFO.cv_info;
 
-// console.log(cv_info.name);
-getContact(cv_info.contact);
-getPermis(cv_info["driver's_license"]);
-getFormations(cv_info.formations);
-getLangues(cv_info.languages);
-getHobbies(cv_info.hobbies);
-getExpsPro(cv_info.professional_experiences);
-getCptsTech(cv_info.technical_skills);
+const deviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    }
+    else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+};
 
-document.querySelector('#accordion-button-1').addEventListener("click",
-    function(event){
-        event.preventDefault();
+if(deviceType() == "desktop") jumbotron();
 
-        switchDisplay(document.querySelector('#accordion-item1'));
-    },
-false);
-
-document.querySelector('#accordion-button-2').addEventListener("click",
-    function(event){
-        event.preventDefault();
-        
-        switchDisplay(document.querySelector('#accordion-item2'));
-    },
-false);
-
+function jumbotron() {
+    let max_scroll_pos = 200;
+    document.querySelector("#jumbotron aside").style.marginRight = "0vw";
+    window.onscroll = function(){
+        current_scroll_pos = window.pageYOffset;
+        if(max_scroll_pos < current_scroll_pos) current_scroll_pos = max_scroll_pos;
+        document.querySelector("#jumbotron").style.top = (current_scroll_pos / 10) + "vh";
+        document.querySelector("#jumbotron aside").style.marginRight = (current_scroll_pos / 4) + "vw";
+    }
+}

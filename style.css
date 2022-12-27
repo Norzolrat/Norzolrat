@@ -1,0 +1,181 @@
+/*###############################################
+##################  MAIN/BODY  ##################
+###############################################*/
+
+body {
+    overflow-x: hidden;
+    background-color: #21336f !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e0f56a; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(40, 84, 231); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(40, 135, 212); 
+}
+
+/*###############################################
+##################  NAVIGATION ##################
+###############################################*/
+
+nav {
+    background-color: rgb(60, 83, 184) !important;
+    box-shadow: 3px 2px 5px blueviolet !important;
+    position: sticky;
+    top: 0;
+    height: 100vh !important;
+    width: 20vw !important;
+}
+
+nav a{
+    font-size: 1.5vw !important;
+    margin: 30px !important;
+    padding: 20px !important;
+    color: rgb(226, 205, 16) !important;
+    display: inline-flex !important;
+}
+
+nav i{
+    font-size: 2.5vw !important;
+    margin: 10px !important;
+}
+
+/*###############################################
+##################  JUMBOTRON  ##################
+###############################################*/
+#header-empty {
+    display: block;
+    height: 30vh;
+    width: 100vw;
+}
+
+header {
+    position: absolute;
+    display: block;
+}
+
+header > #jumbotron {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/jumbotron.jpg");
+    z-index: 1;
+}
+
+header > #jumbotron > aside {
+    float: right;
+    margin: 0px;
+    padding: 60px;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    color: blanchedalmond;
+    z-index: 2;
+}
+
+header > #jumbotron > aside > img{
+    border-radius: 50% 20% / 10% 40%;
+    margin-bottom: 90px;
+    margin-left: 35%;
+}
+
+header > #jumbotron > aside > button{
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 6px;
+    margin-top: 60px;
+    margin-left: 45%;
+}
+
+header > #jumbotron > aside > button:hover{
+
+    border: 2px solid whitesmoke;
+    border-radius: 70% 70% 70% 70%;
+}
+
+/*###############################################
+##################   CONTENT   ##################
+###############################################*/
+content {
+    padding-left: 20vw !important;
+    margin: 0;
+    display: block;
+}
+
+content>article {
+    margin: 0;
+    display: block;
+    padding: 7vw !important;
+    min-height: 100vh !important;
+}
+
+content .nexus1{
+    color: antiquewhite !important;
+    background-color: #21336f !important;
+}
+
+content .nexus2{
+    color: antiquewhite !important;
+    background-color: #26429c !important;
+}
+
+
+@media only screen and (min-width : 321px) {
+    header > #jumbotron > aside {
+        float: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    header > #jumbotron > aside > img{
+        margin-left: 4%;
+    }
+
+    nav {
+        background-color: rgb(60, 83, 184) !important;
+        box-shadow: 3px 2px 5px blueviolet !important;
+        position: sticky;
+        top: 0;
+        height: 100vh !important;
+        width: 10vw !important;
+    }
+
+    nav a{
+
+        margin: 5px !important;
+        padding: 3px !important;
+    }
+
+    nav i{
+        font-size: 5vw !important;
+        margin: 2px !important;
+    }
+
+    .no_smart{
+        display: none !important;
+    }
+
+    content {
+        padding-left: 10vw !important;
+    }
+}
