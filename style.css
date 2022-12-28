@@ -95,6 +95,7 @@ header > #jumbotron > aside > img{
     border-radius: 50% 20% / 10% 40%;
     margin-bottom: 90px;
     margin-left: 35%;
+    margin-bottom: 5%;
 }
 
 header > #jumbotron > aside > button{
