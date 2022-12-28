@@ -148,7 +148,9 @@ content .nexus2{
     }
 
     header > #jumbotron > aside > img{
-        margin-left: 4%;
+        width: 210px;
+        height: 210px;
+        margin-left: 15%;
     }
 
     nav {
