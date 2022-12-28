@@ -172,6 +172,11 @@ content .nexus2{
         font-size: 5vw !important;
         margin: 2px !important;
     }
+    
+    nav i,
+    nav div{
+        cursor: crosshair !important;
+    }
 
     .no_smart{
         display: none !important;
