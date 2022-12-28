@@ -46,7 +46,7 @@ nav {
 nav a{
     font-size: 1.5vw !important;
     margin: 30px !important;
-    padding: 20px !important;
+    cursor: pointer;
     color: rgb(226, 205, 16) !important;
     display: inline-flex !important;
 }
@@ -172,11 +172,6 @@ content .nexus2{
     nav i{
         font-size: 5vw !important;
         margin: 2px !important;
-    }
-    
-    nav i,
-    nav div{
-        cursor: crosshair !important;
     }
 
     .no_smart{
