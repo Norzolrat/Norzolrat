@@ -1,4 +1,3 @@
-
 const deviceType = () => {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -22,3 +21,17 @@ function jumbotron() {
         document.querySelector("#jumbotron aside").style.marginRight = (current_scroll_pos / 4) + "vw";
     }
 }
+
+function scrool_smooth(button,anchor) {
+    button.addEventListener('click', event => {
+        elmt = document.querySelector("#"+anchor);
+        elmt.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    });
+}
+
+scrool_smooth(document.querySelector("#jumbotron aside button"),"pres");
+scrool_smooth(document.querySelector("#btn_pres"),"pres");
+scrool_smooth(document.querySelector("#btn_etud"),"etud");
+scrool_smooth(document.querySelector("#btn_expe"),"expe");
+scrool_smooth(document.querySelector("#btn_hobb"),"hobb");
+scrool_smooth(document.querySelector("#btn_pfol"),"pfol");
