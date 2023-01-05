@@ -173,6 +173,7 @@ content .nexus2{
     padding: 30px;
     border: 2px solid grey;
     border-radius: 4rem;
+    margin-top: 55px;
 }
 
 .box_item1 .overflow-content p{
@@ -240,7 +241,6 @@ content .nexus2{
         height: 70vh;
         padding: 15px;
         margin-top: 35px;
-
     }
 
     .box_item1 .overflow-content p{
