@@ -140,6 +140,58 @@ content .nexus2{
     background-color: #26429c !important;
 }
 
+/*###############################################
+##################  BOX_ITEMS  ##################
+###############################################*/
+
+.box_item{
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    padding: 30px;
+    border: 2px solid grey;
+    border-radius: 4rem;
+}
+
+.box_item .overflow-content p{
+    height: 70%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.box_item img{
+    height: 95%;
+    margin-top: 10px;
+}
+
+.box_item1{
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    padding: 30px;
+    border: 2px solid grey;
+    border-radius: 4rem;
+}
+
+.box_item1 .overflow-content p{
+    height: 70%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.box_item1 img{
+    height: 95%;
+    margin-top: 10px;
+}
+
+
+/*###############################################
+##################  SMARTPHONE ##################
+###############################################*/
 
 @media only screen and (max-width : 850px) {
     header > #jumbotron > aside {
@@ -180,5 +232,26 @@ content .nexus2{
 
     content {
         padding-left: 10vw !important;
+    }
+
+    .box_item1{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        padding: 15px;
+        margin-top: 35px;
+
+    }
+
+    .box_item1 .overflow-content p{
+        height: auto;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .box_item1 img{
+        width: 95%;
+        height: auto;
+        margin-top: 15px;
     }
 }

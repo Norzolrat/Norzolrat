@@ -33,5 +33,6 @@ scrool_smooth(document.querySelector("#jumbotron aside button"),"pres");
 scrool_smooth(document.querySelector("#btn_pres"),"pres");
 scrool_smooth(document.querySelector("#btn_etud"),"etud");
 scrool_smooth(document.querySelector("#btn_expe"),"expe");
+scrool_smooth(document.querySelector("#btn_comp"),"comp");
 scrool_smooth(document.querySelector("#btn_hobb"),"hobb");
 scrool_smooth(document.querySelector("#btn_pfol"),"pfol");
